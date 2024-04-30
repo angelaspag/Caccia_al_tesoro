@@ -1,10 +1,10 @@
 function doLogin() {
- var username = document.getElementById("username").value;
- var password = document.getElementById("password").value;
- if (username == "" || password == "") { 
-   alert (" Username e password sono obbligatori ");
- }
- else {
+   var username = document.getElementById("username").value;
+   var password = document.getElementById("password").value;
+   if (username == "" || password == "") { 
+     alert (" Username e password sono obbligatori ");
+   }
+else {
 
    //chiamiamo il server per effettuare la verifica 
    fetch("http://www.cacciaapi.altervista.org/login.php/loginIpad",{
@@ -23,4 +23,5 @@ function doLogin() {
       console.error('Errore:', error);
     });
   
-  }
+}
+}
